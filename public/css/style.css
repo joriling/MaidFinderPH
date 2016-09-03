@@ -3,13 +3,17 @@ body, h3,h2,h4{
 }
 h5{
     font-size: 1.2em;
-    font-family: 'Lato-Regular';
+    font-family: 'Lato-Light';
     text-align: justify;
 }
 h4
 {
-    font-family: 'Lato-Regular';
-    font-size: 2em;
+    font-family: 'Lato-Light';
+    font-size: 1.9em;
+}
+h2
+{
+    font-family: 'Lato-Light';
 }
 h6{
     font-size: 1.2em;
@@ -88,4 +92,51 @@ footer{
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
+}
+
+/* label color */
+.input-field label {
+    color:#1e88e5;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #1e88e5;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #1e88e5;
+    box-shadow: 0 1px 0 0 #1e88e5;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #1e88e5;
+    box-shadow: 0 1px 0 0 #1e88e5;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #1e88e5;
+    box-shadow: 0 1px 0 0 #1e88e5;
+}
+/* label focus color */
+.input-field input[type=email]:focus + label {
+    color: #1e88e5;
+}
+/* label underline focus color */
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #1e88e5;
+    box-shadow: 0 1px 0 0 #1e88e5;
+}
+/* valid color */
+.input-field input[type=email].valid {
+    border-bottom: 1px solid #1e88e5;
+    box-shadow: 0 1px 0 0 #1e88e5;
+}
+/* invalid color */
+.input-field input[type=email].invalid {
+    border-bottom: 1px solid #1e88e5;
+    box-shadow: 0 1px 0 0 #1e88e5;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #0d47a1;
 }

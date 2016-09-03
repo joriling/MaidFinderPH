@@ -85,22 +85,63 @@
    <div class="parallax-container parallax-2">
      <div class="parallax"></div>
    </div>
-   <div class="section white">
+   <div class="section grey lighten-4">
        <div class="container">
            <div class="row">
                <div class="col s6" style="border-right: 1px solid #ccc">
-                   <h4>"Keep your free time free"</h4>
+                   <h4>Keep your free time free</h4>
                    <h5>Let you free time be yours free from hastle on house chores.</h5>
                </div>
                <div class="col s6">
 
-                   <h4>"See the near job to your place"</h4>
+                   <h4>See the near job to your place</h4>
 
                    <h5><img src="{{ asset('public/semantic/assets/img/bg1.jpg') }}" class="circle" height="30" width="30" alt="">Find job that near to your love once no need to get far to have a job.</h5>
                </div>
            </div>
        </div>
    </div>
+    <div class="section white">
+        <div class="container offset-s2 ">
+            <div class="row ">
+            <h4 class="header center">WE'RE HAPPY TO HEAR FROM YOU</h4>
+                <div class="container">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="name" type="text" class="validate">
+                                <label for="text">Name</label>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input  type="text" class="validate">
+                                <label >Message</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="center col s12">
+                                <button class="btn waves-effect waves-light blue darken-1" type="submit" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 @stop
 
