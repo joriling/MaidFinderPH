@@ -22,7 +22,7 @@
 
                                     <h6 class="center-align"><strong class="white-text">Login</strong></h6>
                                 </li>
-                                <li class="collection-item ">
+                                <li class="collection-item logHeader">
                                     <div class="container">
                                         <div class="row">
                                             @if(Session::has('msg'))
@@ -52,7 +52,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="input-field col s12 m12 l12">New to us?
+                                                <div class="input-field white-text col s12 m12 l12">New to us?
                                                     <a href="{{ asset('/user-register') }}">Sign Up</a>
                                                 </div>
                                             </div>
