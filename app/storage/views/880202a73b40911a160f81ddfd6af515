@@ -11,7 +11,7 @@
             <div class="col s12 m12 l6 animated flipInY " >
                 <div class="row ">
                             <ul class="collection with-header z-depth-4">
-                                <li class="collection-header  blue darken-2">
+                                <li class="collection-header  blue lighten-1">
                                     <div class="center  white-text">
                                         <i class="mdi mdi-lock medium"></i>
                                     </div>

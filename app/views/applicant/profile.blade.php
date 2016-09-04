@@ -6,6 +6,8 @@
 
             <div class="row">
                 <div class="card-panel">
+
+
                     <div class="row">
                         <div class="col s12 m12 l4">
                             <form action="{{ asset('/applicant/update/picture') }}" method="post" enctype="multipart/form-data" />
@@ -18,6 +20,7 @@
                                         <span><i class="mdi mdi-camera small "></i></span>
                                         <input type="file" class="photo" name="profilepic">
                                     </a>
+
                                     <div class="file-path-wrapper reveal">
                                         <input class="file-path validate" type="text">
                                     </div>
@@ -32,7 +35,8 @@
                                 <table>
                                     <tr>
                                         <td><span class="grey-text text-darken-4 name"><i class="material-icons">perm_identity</i> </span> </td>
-                                        <td><span class="grey-text text-darken-4 name">{{ $app->fname ." ". $app->lname }}</span></td>
+                                        <td><span class="grey-text text-darken-4 name">{{ $app->fname ." ". $app->lname }}</span>
+                                            <a class="btn-floating tooltipped btn-large waves-effect waves-light right  red  " data-position="bottom" data-delay="50" data-tooltip="Edit Profile"  href="{{ asset('/applicant/profile/edit/') }}"><i class="material-icons">mode_edit</i></a></td>
                                     </tr>
                                     <tr>
                                         <?php $month = array("January", "Febuary", "March", "April", "May", "June", "July", "August", "September","October", "November", "December"); ?>
@@ -75,22 +79,18 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="row">
-                                <div class="col s12 m12 l12">
-                                    <h6 class="right-align">
-                                        <a class="btn blue darken-1" href="{{ asset('/applicant/profile/edit/') }}"><i class="mdi mdi-pencil small left "></i>Edit</a>
-                                    </h6>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="divider"></div>
-            <div class="row">
-                <div class="col s12 m12 l3"><h5>Job Availability</h5></div>
+            <div class="row ">
                 <div class="col s12 m12 l3">
-                    <p>
+                    <h5>Job Availability</h5>
+
+                </div>
+                <div class="col s12 m12 l3">
+                    <p class="center">
                         <a class="add_new btn blue lighten-2" href="{{ asset('/applicant/create/application') }}">
                             <i class="mdi mdi-newspaper small left"></i></i>Create New
                         </a>

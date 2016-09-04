@@ -10,11 +10,11 @@
     <li><a class="black-text" href="{{ asset('applicant/logout') }}">Logout</a></li>
 </ul>
 <div class="navbar-fixed">
-    <nav class="white light-blue darken-3">
+    <nav class="white light-blue darken-1">
         <div class="nav-wrapper navbar-fixed container-fluid">
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse btn-floating btn-large waves-effect waves-light  blue accent-1 white-text"><i class="material-icons">menu</i></a>
 
-            <a href="{{asset('/')}}" style="font-family:DancingScript, cursive; margin-left:0;color:#46a7f7; weight:100;font-size:2em;"  class="brand-logo above animated bounceInLeft"><span><img height="55"   src="{{ asset('public/images/header.png') }}" /></span></a>
+            <a href="{{asset('/')}}" style="font-family:DancingScript, cursive; margin-left:0;color:#46a7f7; weight:100;font-size:2em;"  class="brand-logo above "><span><img height="55"   src="{{ asset('public/images/header.png') }}" /></span></a>
             <ul class="right hide-on-med-and-down ">
                 <li><a class="white-text" href="{{ asset('applicant/home') }}">Home</a></li>
                 <li><a class="white-text" href="{{ asset('employer/job/ads') }}">Employer ads</a></li>

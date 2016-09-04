@@ -1,16 +1,23 @@
+nav{
+    font-family: "Lato Light";
+
+}
 .sideNav{
     margin-left:-10px;
     margin-top:-8px;
+    font-family: "Lato Light";
+    font-size: 1.1em;
 }
 .sideNav .collection a.collection-item
 {
     background:#546e7a;
     color: #fff;
+    padding: 15px;
 }
 .sideNav .collection a.collection-item:hover
 {
     background: #90a4ae;
 }
 body{
-    font-family: 'Lato-Light';
+    font-family: 'Lato-Regular';
 }
