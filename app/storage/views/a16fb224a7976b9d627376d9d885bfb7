@@ -1,5 +1,5 @@
 
-<footer class="page-footer" style="padding: 70px; background-color: #333; color: #bbbdbf">
+<footer class=" footerS" >
 
 
         <div class=" center ">

@@ -17,7 +17,7 @@ class HelperController extends BaseController {
 	}
     public function helpers() {
         if(! Session::has('employer')) {
-            return Redirect::to('/user-login')->with('auth','To view helper profiles you must be already signed in');
+            return Redirect::to('/user-login')->with('auth','Sign in First');
         }
         $application = Applications::paginate(20);
         $subscription = Subscriptions::where('empid', '=' ,$this->emp->empid)->first();

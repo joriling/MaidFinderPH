@@ -1,0 +1,16 @@
+.sideNav{
+    margin-left:-10px;
+    margin-top:-8px;
+}
+.sideNav .collection a.collection-item
+{
+    background:#546e7a;
+    color: #fff;
+}
+.sideNav .collection a.collection-item:hover
+{
+    background: #90a4ae;
+}
+body{
+    font-family: 'Lato-Light';
+}

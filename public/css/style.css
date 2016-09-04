@@ -19,6 +19,11 @@ h6{
     font-size: 1.2em;
 }
 p{ font-size: 1.3em}
+.navHeader
+{
+    padding: 1.2em 3em;
+    height: 7em;
+}
 .logoText
 {
     font-family: 'Dancing Script';
@@ -64,8 +69,16 @@ p{ font-size: 1.3em}
             0 10px 10px rgba(0,0,0,.2),
             0 20px 20px rgba(0,0,0,.3);
 }
-footer{
-    padding: 10px;
+.footerS{
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#999;
+    padding: 70px;
+    background-color: #333;
+    color: #bbbdbf
 }
 
 .parallax-container {

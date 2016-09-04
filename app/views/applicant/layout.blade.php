@@ -5,6 +5,14 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/material/css/mycss.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('public/material/css/materialize.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('public/material/css/page.css')}}" />
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/semantic/assets/css/fonts.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/material/css/page.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/public/css/Nav.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/css/animate.css')}}" />
+    <link rel="stylesheet" href="{{asset('public/css/materialdesignicons.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/material/css/home-style.css')}}" />
+    <link rel="icon" href="{{ asset('public/images/icon2.png') }}">
     @section('css')
 
     @show
@@ -13,18 +21,17 @@
     @show
 </head>
 <body class="grey lighten-3">
+   @include('applicant.header')
 
-@include('applicant.header')
 <div class="container-fluid">
     <div class="row">
-        <div class="col s12 m12 l2 hide-on-med-and-down">
+        <div class="col s12 m4 l3 hide-on-med-and-down">
             @include('applicant.sidenav')
         </div>
-        <div class="col s12 m12 l9" style="padding:0px;">
+        <div class="col s12 m8 l9" >
             @yield('content')
         </div>
     </div>
-    @include('shared.footer')
 </div>
 
 <script src="{{ asset('public/material/js/jquery.js') }}"></script>

@@ -5,6 +5,14 @@
     <link rel="stylesheet" type="text/css" href="<?php echo asset('public/material/css/mycss.css'); ?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo asset('public/material/css/materialize.min.css'); ?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo asset('public/material/css/page.css'); ?>" />
+
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('public/semantic/assets/css/fonts.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('public/material/css/page.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('/public/css/Nav.css'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('public/css/animate.css'); ?>" />
+    <link rel="stylesheet" href="<?php echo asset('public/css/materialdesignicons.min.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo asset('public/material/css/home-style.css'); ?>" />
+    <link rel="icon" href="<?php echo asset('public/images/icon2.png'); ?>">
     <?php $__env->startSection('css'); ?>
 
     <?php echo $__env->yieldSection(); ?>
@@ -13,18 +21,17 @@
     <?php echo $__env->yieldSection(); ?>
 </head>
 <body class="grey lighten-3">
+   <?php echo $__env->make('applicant.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-<?php echo $__env->make('applicant.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <div class="container-fluid">
     <div class="row">
-        <div class="col s12 m12 l2 hide-on-med-and-down">
+        <div class="col s12 m4 l3 hide-on-med-and-down">
             <?php echo $__env->make('applicant.sidenav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         </div>
-        <div class="col s12 m12 l9" style="padding:0px;">
+        <div class="col s12 m8 l9" >
             <?php echo $__env->yieldContent('content'); ?>
         </div>
     </div>
-    <?php echo $__env->make('shared.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 </div>
 
 <script src="<?php echo asset('public/material/js/jquery.js'); ?>"></script>

@@ -3,9 +3,7 @@
 @section('content')
     <div class="row" style="padding: 0px;">
         <div class="col s12 m12 l12">
-            <div class="row">
-                <h5 class="black-text">Your profile</h5>
-            </div>
+
             <div class="row">
                 <div class="card-panel">
                     <div class="row">
@@ -17,7 +15,7 @@
                             <div class="row">
                                 <div class="file-field input-field">
                                     <a class="" style="text-decoration: underline;">
-                                        <span>Change Photo</span>
+                                        <span><i class="mdi mdi-camera small "></i></span>
                                         <input type="file" class="photo" name="profilepic">
                                     </a>
                                     <div class="file-path-wrapper reveal">
@@ -39,7 +37,7 @@
                                     <tr>
                                         <?php $month = array("January", "Febuary", "March", "April", "May", "June", "July", "August", "September","October", "November", "December"); ?>
                                         <?php $bdate = explode('-', $app->birth); ?>
-                                        <td><span class="grey-text text-darken-4"><i class="material-icons">redeem</i> </span> </td>
+                                        <td><span class="grey-text text-darken-4"><i class="mdi mdi-cake-variant small"></i> </span> </td>
                                         <td><span class="grey-text text-darken-4">{{ $month[$bdate[1]].'/' . $bdate[2] .'/' . $bdate[0]  }}</span></td>
                                     </tr>
                                     <tr>
@@ -80,7 +78,7 @@
                             <div class="row">
                                 <div class="col s12 m12 l12">
                                     <h6 class="right-align">
-                                        <a class="btn blue darken-1" href="{{ asset('/applicant/profile/edit/') }}">Edit Profile</a>
+                                        <a class="btn blue darken-1" href="{{ asset('/applicant/profile/edit/') }}"><i class="mdi mdi-pencil small left "></i>Edit</a>
                                     </h6>
                                 </div>
                             </div>
@@ -90,11 +88,11 @@
             </div>
             <div class="divider"></div>
             <div class="row">
-                <div class="col s12 m12 l3"><h5>Job Preferences</h5></div>
+                <div class="col s12 m12 l3"><h5>Job Availability</h5></div>
                 <div class="col s12 m12 l3">
                     <p>
                         <a class="add_new btn blue lighten-2" href="{{ asset('/applicant/create/application') }}">
-                            <b>Create new</b>
+                            <i class="mdi mdi-newspaper small left"></i></i>Create New
                         </a>
                     </p>
                 </div>
