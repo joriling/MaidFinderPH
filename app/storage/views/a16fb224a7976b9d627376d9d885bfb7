@@ -1,8 +1,8 @@
 
-<footer class=" footerS" >
+<footer class="footerS" >
 
 
-        <div class=" center ">
+        <div class=" footer-copyright center ">
             ©2016 MaidFinderPH
         </div>
 
