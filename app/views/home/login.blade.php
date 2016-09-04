@@ -3,7 +3,7 @@
 @extends('home.layout')
 
 @section('content')
-    <div class="container s6 animated flipInY">
+    <div class="container s6 " style="margin-top: 6em;">
         @if(Session::has('auth'))
             <div class="card-panel center pink lighten-6" style="padding: 2px;">
                 <h5 class="white-text">{{ Session::get('auth') }}</h5>
@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col s12 m12 l3" >
             </div>
-            <div class="col s12 m12 l6 " style="margin-top: 6em;">
+            <div class="col s12 m12 l6 animated flipInY " >
                 <div class="row ">
                             <ul class="collection with-header z-depth-4">
                                 <li class="collection-header  blue darken-2">
@@ -52,10 +52,22 @@
                                                 </div>
                                             </div>
                                             <div class="row">
+                                                <div class="divider horizontal"></div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="input-field col s12 m12 l12">
+                                                    <button  type="submit" class="btn blue darken-4 waves-effect waves-light col s12"><i class="mdi mdi-facebook-box left"></i>sign in Facebook
+
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
                                                 <div class="input-field white-text col s12 m12 l12">New to us?
                                                     <a href="{{ asset('/user-register') }}">Sign Up</a>
                                                 </div>
                                             </div>
+
                                         </form>
                                     </div>
                                 </li>

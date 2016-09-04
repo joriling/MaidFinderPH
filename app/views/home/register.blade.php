@@ -79,6 +79,17 @@ if(Session::has('input')) {
                                                 </div>
                                             </div>
                                             <div class="row">
+                                                <div class="divider horizontal"></div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="input-field col s12 m12 l12">
+                                                    <button  type="submit" class="btn blue darken-4 waves-effect waves-light col s12"><i class="mdi mdi-facebook-box left"></i>Sign Up Facebook
+
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
                                                 <div class="input-field col s12 m12 l12">
                                                     <span>Already have an account? </span><a class="blue-text" href="{{ asset('/user-login') }}">Sign in</a>
                                                 </div>
