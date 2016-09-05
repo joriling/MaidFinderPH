@@ -12,7 +12,7 @@
                         <div class="col s12 m12 l4">
                             <form action="{{ asset('/applicant/update/picture') }}" method="post" enctype="multipart/form-data" />
                             <div class="row">
-                                <img id="editpicture" class="right-align circle" src="{{ asset('public/uploads/profile/'.(($app['profilepic']) != null ? $app['profilepic'] :'facebook.jpg' )) }}" />
+                                <img id="editpicture"  class=" circle" src="{{ asset('public/uploads/profile/'.(($app['profilepic']) != null ? $app['profilepic'] :'facebook.jpg' )) }}" />
                             </div>
                             <div class="row">
                                 <div class="file-field input-field">

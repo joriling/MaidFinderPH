@@ -13,6 +13,7 @@ nav{
     background:#546e7a;
     color: #fff;
     padding: 15px;
+    font-size: 1em;
 }
 .sideNav .collection a.collection-item:hover
 {

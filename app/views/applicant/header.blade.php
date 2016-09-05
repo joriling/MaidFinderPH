@@ -14,7 +14,7 @@
         <div class="nav-wrapper navbar-fixed container-fluid">
             <a href="#" data-activates="mobile-demo" class="button-collapse btn-floating btn-large waves-effect waves-light  blue accent-1 white-text"><i class="material-icons">menu</i></a>
 
-            <a href="{{asset('/')}}" style="font-family:DancingScript, cursive; margin-left:0;color:#46a7f7; weight:100;font-size:2em;"  class="brand-logo above "><span><img height="55"   src="{{ asset('public/images/header.png') }}" /></span></a>
+            <a href="{{asset('/')}}" style="font-family:DancingScript, cursive; margin-left:0;color:#46a7f7; weight:100;font-size:2em;"  class="brand-logo above "><span><img height="55"   src="{{ asset('public/images/header2.png') }}" /></span></a>
             <ul class="right hide-on-med-and-down ">
                 <li><a class="white-text" href="{{ asset('applicant/home') }}">Home</a></li>
                 <li><a class="white-text" href="{{ asset('employer/job/ads') }}">Employer ads</a></li>
@@ -26,7 +26,8 @@
                     <a class="dropdown-button chip light-blue lighten-1 white-text" data-hover="true" data-beloworigin="true" href="{{ asset('applicant/profile') }}" data-activates="dropdown1">{{ $app['fname'] }}<img src="{{ asset('public/uploads/profile/'.(($app['profilepic']) != null ? $app['profilepic'] :'facebook.jpg' )) }}" alt="Contact Person"><i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <ul class="side-nav " id="mobile-demo">
-                <li>
+                <li></li>
+                    </a>
                     <a class="collection-item black-text" href="{{ asset('applicant/home') }}">Home</a>
                     <a class="collection-item black-text" href="{{ asset('applicant/shortlist') }}">Shortlist</a>
                     <a class="collection-item black-text" href="{{ asset('employer/job/request') }}">Employers request</a>
