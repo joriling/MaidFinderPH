@@ -10,7 +10,7 @@
     <li><a class="black-text" href="{{ asset('applicant/logout') }}">Logout</a></li>
 </ul>
 <div class="navbar-fixed">
-    <nav class="white light-blue darken-1">
+    <nav class="">
         <div class="nav-wrapper navbar-fixed container-fluid">
             <a href="#" data-activates="mobile-demo" class="button-collapse btn-floating btn-large waves-effect waves-light  blue accent-1 white-text"><i class="material-icons">menu</i></a>
 
@@ -23,7 +23,7 @@
                 <!-- Dropdown Trigger -->
                 <li>
 
-                    <a class="dropdown-button chip blue white-text" data-hover="true" data-beloworigin="true" href="{{ asset('applicant/profile') }}" data-activates="dropdown1">{{ $app['fname'] }}<img src="{{ asset('public/uploads/profile/'.(($app['profilepic']) != null ? $app['profilepic'] :'facebook.jpg' )) }}" alt="Contact Person"><i class="material-icons right">arrow_drop_down</i></a></li>
+                    <a class="dropdown-button chip light-blue lighten-1 white-text" data-hover="true" data-beloworigin="true" href="{{ asset('applicant/profile') }}" data-activates="dropdown1">{{ $app['fname'] }}<img src="{{ asset('public/uploads/profile/'.(($app['profilepic']) != null ? $app['profilepic'] :'facebook.jpg' )) }}" alt="Contact Person"><i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <ul class="side-nav " id="mobile-demo">
                 <li>

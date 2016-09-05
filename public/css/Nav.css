@@ -1,12 +1,12 @@
 nav{
     font-family: "Lato Light";
-
+    background: #5fb4fa;
 }
 .sideNav{
     margin-left:-10px;
     margin-top:-8px;
     font-family: "Lato Light";
-    font-size: 1.1em;
+    font-size: 1.1em;;
 }
 .sideNav .collection a.collection-item
 {
