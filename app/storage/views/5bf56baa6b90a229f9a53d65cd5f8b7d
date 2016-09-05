@@ -20,12 +20,12 @@
         <title>MaidFinder PH</title>
     <?php echo $__env->yieldSection(); ?>
 </head>
-<body class="grey lighten-3">
+<body class="grey lighten-4">
    <?php echo $__env->make('applicant.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col s12 m4 l3 hide-on-med-and-down" style="background: #546e7a; height: 70em; padding: 2px;">
+        <div class="col s12 m4 l3 hide-on-med-and-down" style="background: #eff0f1; height: 70em; padding: 2px;">
             <?php echo $__env->make('applicant.sidenav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
         </div>

@@ -10,14 +10,15 @@ nav{
 }
 .sideNav .collection a.collection-item
 {
-    background:#546e7a;
-    color: #fff;
+    background: #eff0f1;
+    color: #828486;
     padding: 15px;
     font-size: 1em;
 }
 .sideNav .collection a.collection-item:hover
 {
-    background: #90a4ae;
+    background: #d0dcea;
+    color:#5b5b5c;
 }
 body{
     font-family: 'Lato-Regular';

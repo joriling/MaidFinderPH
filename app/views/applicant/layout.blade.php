@@ -20,12 +20,12 @@
         <title>MaidFinder PH</title>
     @show
 </head>
-<body class="grey lighten-3">
+<body class="grey lighten-4">
    @include('applicant.header')
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col s12 m4 l3 hide-on-med-and-down" style="background: #546e7a; height: 70em; padding: 2px;">
+        <div class="col s12 m4 l3 hide-on-med-and-down" style="background: #eff0f1; height: 70em; padding: 2px;">
             @include('applicant.sidenav')
 
         </div>
