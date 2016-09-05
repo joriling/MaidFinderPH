@@ -23,3 +23,7 @@ nav{
 body{
     font-family: 'Lato-Regular';
 }
+.cText
+{
+    text-transform: capitalize;
+}

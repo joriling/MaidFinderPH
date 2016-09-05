@@ -30,14 +30,14 @@
                                 <table>
                                     <tr>
                                         <td><span class="grey-text text-darken-4 name"><i class="material-icons">perm_identity</i> </span> </td>
-                                        <td><span class="grey-text text-darken-4 name"><?php echo $app->fname ." ". $app->lname; ?></span>
+                                        <td><span class="grey-text cText text-darken-4 name"><?php echo $app->fname ." ". $app->lname; ?></span>
                                             <a class="btn-floating tooltipped btn-large waves-effect waves-light right  red  " data-position="bottom" data-delay="50" data-tooltip="Edit Profile"  href="<?php echo asset('/applicant/profile/edit/'); ?>"><i class="material-icons">mode_edit</i></a></td>
                                     </tr>
                                     <tr>
                                         <?php $month = array("January", "Febuary", "March", "April", "May", "June", "July", "August", "September","October", "November", "December"); ?>
                                         <?php $bdate = explode('-', $app->birth); ?>
                                         <td><span class="grey-text text-darken-4"><i class="mdi mdi-cake-variant small"></i> </span> </td>
-                                        <td><span class="grey-text text-darken-4"><?php echo $month[$bdate[1]].'/' . $bdate[2] .'/' . $bdate[0]; ?></span></td>
+                                        <td><span class="grey-text cText text-darken-4"><?php echo $month[$bdate[1]].'/' . $bdate[2] .'/' . $bdate[0]; ?></span></td>
                                     </tr>
                                     <tr>
                                         <td><span class="grey-text text-darken-4"><i class="material-icons">email</i> </span> </td>

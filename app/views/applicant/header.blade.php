@@ -22,8 +22,10 @@
                 <li><a class="white-text" href="badges.html">Subscription</a></li>
                 <!-- Dropdown Trigger -->
                 <li>
-
-                    <a class="dropdown-button chip light-blue lighten-1 white-text" data-hover="true" data-beloworigin="true" href="{{ asset('applicant/profile') }}" data-activates="dropdown1">{{ $app['fname'] }}<img src="{{ asset('public/uploads/profile/'.(($app['profilepic']) != null ? $app['profilepic'] :'facebook.jpg' )) }}" alt="Contact Person"><i class="material-icons right">arrow_drop_down</i></a></li>
+                    <a class="dropdown-button chip light-blue lighten-5" style="color:#5b5b5c;text-transform: capitalize;" data-hover="true" data-beloworigin="true" href="{{ asset('applicant/profile') }}" data-activates="dropdown1">{{ $app['fname'] }}
+                        <i class="material-icons right" style="color:#e1f5fe">arrow_drop_down</i>
+                        <img src="{{ asset('public/uploads/profile/'.(($app['profilepic']) != null ? $app['profilepic'] :'facebook.jpg' )) }}" alt="Contact Person"></a>
+                </li>
             </ul>
             <ul class="side-nav " id="mobile-demo">
                 <li></li>
@@ -38,7 +40,7 @@
                 <li><a class="black-text" href="{{ asset('employers/job/ads') }}">Employer ads</a></li>
                 <li><a class="black-text" href="badges.html">Recomendations</a></li>
                 <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#_" data-activates="dropdown2">{{ $app['fname'] }}<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button" style="text-transform: capitalize" href="#_" data-activates="dropdown2">{{ $app['fname'] }}<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
         </div>
     </nav>
