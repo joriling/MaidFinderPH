@@ -13,8 +13,23 @@
  */
 class AccountController extends BaseController {
 
-    public function handleLogin() {
+    public function admin_login() {
+        return View::make('admin.login');
+    }
+    public function handle_admin_login() {
 
+        $email = Input::get('email');
+        $password = Input::get('password');
+
+        $admin = Admins::where('email', '=', $email)
+                        ->where('password', '=', $password)
+                        ->get();
+        if($admin and $admin->email == $email and $admin->password == $password) {
+            Session::put('admin', $admin);
+            Return Redirect::to('/dashboard');
+        }
+    }
+    public function handleLogin() {
 
         $emp = Employers::where('email', '=', Input::get('email'))
                 ->where('password', '=', Input::get('password'))
@@ -25,7 +40,7 @@ class AccountController extends BaseController {
             Session::put('isAuth',true);
 
 
-            return Redirect::to('employer/update');
+            return Redirect::to('employer/home');
         }
         $app = Applicants::where('email', '=', Input::get('email'))
                 ->where('password', '=', Input::get('password'))

@@ -170,6 +170,7 @@ class ApplicantController extends BaseController {
 
         $app_skill = ApplicantSkills::where('applicationid', '=', $application->applicationid)->first();
         $duties = Duties::find($app_skill->dutyid);
+
         $duties->cooking = Input::has('cooking') ? Input::get('cooking') : null;
         $duties->laundry = Input::has('laundry') ? Input::get('laundry') : null;
         $duties->gardening = Input::has('gardening') ?Input::get('gardening') : null;
@@ -325,6 +326,9 @@ class ApplicantController extends BaseController {
                 ->with('list', $list);
     }
     public function job_request() {
+
+    }
+    public function applications_list() {
 
     }
     public function applicant_logout() {

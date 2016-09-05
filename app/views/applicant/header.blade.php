@@ -1,7 +1,7 @@
 
 <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content gray-text browser-default">
-    <li><a class="black-text" href="{{ asset('applicant/logout') }}">Logout</a></li>
+    <li><a class="black-text" href="{{ asset('applicant/logout') }}">Logout <i></i> </a></li>
 </ul>
 
 <!-- Dropdown Structure -->

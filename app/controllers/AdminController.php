@@ -21,11 +21,9 @@ class AdminController  extends BaseController {
             }
         });
     }
-    
-    public function dashboard() {
-        return View::make('admin.dashboard');
+    public function login() {
+
     }
-    
     public function logout() {
         Session::flush();
         return true;

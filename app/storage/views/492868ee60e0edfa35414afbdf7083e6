@@ -48,14 +48,14 @@ if(Session::has('input')) {
                                                 <div class="input-field blue-grey-text col s12 m12 l12">
                                                     <i class="material-icons prefix">account_circle</i>
                                                     <input value="<?php echo isset($data['fname']) ? $data['fname'] : ''; ?>" id="icon_prefix" type="text" name="fname" class="validate">
-                                                    <label for="icon_prefix">First name</label>
+                                                    <label for="icon_prefix">First Name</label>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="input-field blue-grey-text col s12 m12 l12">
                                                     <i class="material-icons prefix">account_circle</i>
                                                     <input value="<?php echo isset($data['lname']) ? $data['lname'] : ''; ?>" id="icon_prefix" type="text" name="lname" class="validate">
-                                                    <label for="icon_prefix">Last name</label>
+                                                    <label for="icon_prefix">Last Name</label>
                                                 </div>
                                             </div>
                                             <div class="row">

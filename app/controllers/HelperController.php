@@ -17,11 +17,12 @@ class HelperController extends BaseController {
 	}
     public function helpers() {
         if(! Session::has('employer')) {
-            return Redirect::to('/user-login')->with('auth','Sign in First');
+            return Redirect::to('/user-login')->with('auth','To view helper profiles you must be already signed in');
         }
         $application = Applications::paginate(20);
         $subscription = Subscriptions::where('empid', '=' ,$this->emp->empid)->first();
-        if($subscription == null and count($subscription) < 0) {
+
+        if($subscription == null and count($subscription) <= 0) {
             return View::make('helpers.helpers')
             				->with('emp',$this->emp)
                             ->with('application', $application)

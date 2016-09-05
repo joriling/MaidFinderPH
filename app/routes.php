@@ -13,7 +13,6 @@
 
 Route::get('/', function()
 {
-
     if(Session::has('applicant')) {
         return Redirect::to('applicant/home');
     }
@@ -42,7 +41,7 @@ Route::post('user-login', 'AccountController@handleLogin');
  */
 
 Route::get('user-register', function () {
-   return View::make('home.register');
+    return View::make('home.register');
 });
 
 Route::post('user-register', 'AccountController@next');
@@ -83,6 +82,7 @@ Route::get('/employer/applicant/message/view/{id}', 'EmployerController@view_mes
  */
 Route::get('/applicant/home', 'ApplicantController@applicant_home');
 Route::get('/applicant/profile','ApplicantController@profile_application');
+Route::get('/applicant/applications/list', 'ApplicantController@applications_list');
 Route::get('/applicant/logout', 'ApplicantController@applicant_logout');
 Route::get('/applicant/profile/edit/', 'ApplicantController@update_profile');
 Route::post('/applicant/profile/edit', 'ApplicantController@handle_update');
@@ -115,26 +115,10 @@ Route::get('application/view/{id}','HelperController@application_view');
  *
  * ADMIN ROUTES
  */
-
-
-Route::get('site-admin', function(){
-   return View::make('admin.site-admin');
+Route::group(array('prefix' => 'admin'), function() {
+    Route::get('/account/login','AccountController@admin_login');
+    Route::post('/account/login', 'AccountController@handle_admin_login');
 });
-
-Route::post('site-admin', function() {
-   $admin = Admin::where('email', '=', Input::get('email'))
-           ->where('password', '=' ,Input::get('password'))
-           ->first();
-   if($admin and ($admin->email == Input::get('email') and $admin->password == Input::get('password'))) {
-       Session::put('admin', true);
-       Session::put('admindata', $admin);
-       return Redirect::to('site-admin/profile');
-   }
-   return Redirect::to('site-admin');
-});
-Route::get('site-admin/profile','AdminController@dashboard');
-Route::get('site-admin/logout', 'AdminController@logout');
-
 
 
 /*
@@ -176,3 +160,5 @@ Route::post('/employer/add/hirelist', function() {
     }
     return "0";
 });
+
+Route::get('/text', 'EmployerController@notify');

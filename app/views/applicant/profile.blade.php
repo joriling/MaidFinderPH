@@ -3,11 +3,8 @@
 @section('content')
     <div class="row" style="padding: 0px;">
         <div class="col s12 m12 l12">
-
             <div class="row">
                 <div class="card-panel">
-
-
                     <div class="row">
                         <div class="col s12 m12 l4">
                             <form action="{{ asset('/applicant/update/picture') }}" method="post" enctype="multipart/form-data" />
@@ -57,7 +54,7 @@
                                         <td><span class="grey-text text-darken-4">{{ $app->contactno }}</span></td>
                                     </tr>
                                     <tr>
-                                        <td><span class="grey-text text-darken-4"><i class="material-icons">supervisor_account</i> </span> </td>
+                                        <td><span class="grey-text text-darken-4"><i class="mdi mdi-gender-male-female small"></i> </span> </td>
                                         <td><span class="grey-text text-darken-4">{{ $app->gender }}</span></td>
                                     </tr>
                                 </table>

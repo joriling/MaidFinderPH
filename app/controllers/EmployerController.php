@@ -8,6 +8,7 @@ class EmployerController extends BaseController {
     private $emp;
     public function __construct() {
 
+
         $this->beforeFilter(function () {
             if (!Session::has('employer')) {
                 return Redirect::to('user-login');
@@ -19,10 +20,8 @@ class EmployerController extends BaseController {
     }
 
     public function employer_home() {
-      $app = Applicants::paginate(2);
-      $ads = Ads::paginate(2);
+      $ads = Ads::where('empid', '=', $this->emp->empid)->get();
       return View::make('employer.home')->with('emp', $this->emp)
-                    ->with('app', $app)
                     ->with('ads',$ads);
     }
     public function employer_profile() {
@@ -68,7 +67,7 @@ class EmployerController extends BaseController {
         $emp->nationality = Input::get('nationality');
         $emp->regionid = Input::get('location');
         $emp->pitch = Input::get('pitch');
-
+        
         $emp->save();
 
         return Redirect::to('employer/profile')
@@ -81,7 +80,7 @@ class EmployerController extends BaseController {
                                 $join->on('plan.planid', '=', 'subscription.planid')
                                     ->where('subscription.empid', '=', $this->emp->empid);
                             })->first();
-        $ads = Ads::where('empid', '=', $this->emp->empid)->simplePaginate(5);
+        $ads = Ads::where('empid', '=', $this->emp->empid)->get();
         if(isset($ads) and count($ads) >0) {
             return View::make('employer.ads')
                         ->with('emp', $this->emp)
@@ -207,7 +206,10 @@ class EmployerController extends BaseController {
 
         $ad = Ads::where('adid','=', $id)->first();
         $duties = Duties::where('adid', '=', $ad->adid)->first();
-        $ad_desc = AdDesc::where('adid', '=', $ad->adid)->get();
+        $job_desc = AdDesc::where('adid', '=', $ad->adid)->get();
+        if($job_desc and count($job_desc) >0 ) {
+          Session::put('job_desc', $job_desc);
+        }
         if($duties){
             Session::put('duties', $duties);
         }
@@ -215,7 +217,6 @@ class EmployerController extends BaseController {
                     ->with('emp', $this->emp)
                     ->with('location', Regions::all())
                     ->with('ad', $ad)
-                    ->with('ad_desc', $ad_desc)
                     ->with('salary', Salaries::all())
                     ->with('jobtype', JobTypes::all())
                     ->with('salary', Salaries::all());
@@ -295,11 +296,25 @@ class EmployerController extends BaseController {
         $duties->pet = Input::has('pet') ? Input::get('pet') : null;
         $duties->other = Input::get('other');
         $duties->save();
+
+      /*  if(Input::has('job_desc') and count(Input::get('job_desc')) > 0) {
+            foreach(Input::get('job_desc') as $desc) {
+                if($desc != null) {
+                  //  $job_desc = where('')
+                    $job_desc->adid = $ads->adid;
+                    $job_desc->desc = $desc;
+                    $job_desc->save();
+                }
+            }
+            Session::forget('job_desc');
+
+        }*/
         return Redirect::to('employer/ads')
                         ->with('message','Your job ad is updated.');
 
     }
     public function helpers() {
+        return "Hello";
         $application = Applications::paginate(20);
         if(! $this->emp->subscribe) {
             return View::make('helpers.helpers')
@@ -324,7 +339,7 @@ class EmployerController extends BaseController {
         $jobtype = JobTypes::find($application->jobtypeid);
         $app_skill = ApplicantSkills::where('appid', '=', $application->appid)->first();
         $duties = Duties::find($app_skill->dutyid);
-        
+
         return View::make('helpers.subscribed.applicant-application')
                         ->with('emp', $this->emp)
                         ->with('application', $application)
@@ -371,4 +386,25 @@ class EmployerController extends BaseController {
       Session::flush();
       return Redirect::to('/');
     }
+    public function notify() {
+        $result = $this->itexmo('09226663075', 'Hello World','LOURE663075_MK585');
+        if($result == "0") {
+            return "Message sent";
+        }
+        return "Message not sent";
+    }
+    private function itexmo($number,$message,$apicode){
+        $url = 'https://www.itexmo.com/php_api/api.php';
+        $itexmo = array('1' => $number, '2' => $message, '3' => $apicode);
+        $param = array(
+            'http' => array(
+                'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+                'method'  => 'POST',
+                'content' => http_build_query($itexmo),
+            ),
+        );
+        $context  = stream_context_create($param);
+        return file_get_contents($url, false, $context);
+    }
+
 }
