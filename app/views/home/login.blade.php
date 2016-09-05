@@ -31,14 +31,14 @@
                                         </div>
                                         <form   action="{{ asset('/user-login')  }}" method="POST">
                                             <div class="row">
-                                                <div class="input-field col s12 m12 l12 grey-text">
+                                                <div class="input-field  valign-wrapper col s12 m12 l12 grey-text">
                                                     <i class="material-icons prefix">account_circle</i>
                                                     <input id="icon_prefix" type="text" name="email" class="validate">
                                                     <label for="icon_prefix">Email</label>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="input-field col s12 m12 l12 grey-text">
+                                                <div class="input-field  valign-wrapper col s12 m12 l12 grey-text">
                                                     <i class="mdi mdi-key prefix"></i>
                                                     <input id="icon_prefix" type="password" name="password" class="validate">
                                                     <label for="icon_prefix">Password</label>
