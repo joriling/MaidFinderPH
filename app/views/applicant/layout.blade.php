@@ -25,7 +25,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col s12 m4 l3 hide-on-med-and-down" style="background: #eff0f1; height: 70em; padding: 2px;">
+        <div class="col s12 m4 l3 hide-on-med-and-down" style="background: #eff0f1; height: 40em; padding: 2px;">
             @include('applicant.sidenav')
 
         </div>

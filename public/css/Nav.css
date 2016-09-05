@@ -27,3 +27,10 @@ body{
 {
     text-transform: capitalize;
 }
+.tIcon
+{
+    font-family: 'Lato-Light';
+    font-size: 1em;
+    color: #5b5b5c;
+    margin:5px;
+}
