@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="<?php echo asset('public/css/materialdesignicons.min.css'); ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo asset('public/material/css/home-style.css'); ?>" />
     <link rel="icon" href="<?php echo asset('public/images/icon2.png'); ?>">
-<?php $__env->startSection('css'); ?>
+    <?php $__env->startSection('css'); ?>
     <?php echo $__env->yieldSection(); ?>
     <?php $__env->startSection('title'); ?>
         <title>MaidFinderPH</title>
     <?php echo $__env->yieldSection(); ?>
 </head>
 <body class="grey lighten-5">
-<?php echo $__env->make('home.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-    <?php echo $__env->yieldContent('content'); ?>
+<?php echo $__env->make('account.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->yieldContent('content'); ?>
 <?php echo $__env->make('shared.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-<!--  Scripts-->
+        <!--  Scripts-->
 <script src="<?php echo asset('public/material/js/jquery.js'); ?>"></script>
 <script src="<?php echo asset('public/material/js/jquery.js'); ?>"></script>
 <script src="<?php echo asset('public/material/js/materialize.min.js'); ?>" ></script>
@@ -39,8 +39,5 @@
 </script>
 <?php $__env->startSection('js'); ?>
 <?php echo $__env->yieldSection(); ?>
-</body>
-</html>
-
 </body>
 </html>

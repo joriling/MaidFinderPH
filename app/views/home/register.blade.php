@@ -98,11 +98,7 @@ if(Session::has('input')) {
                                     </div>
                                 </li>
                             </ul>
-
                 </div>
-            </div>
-            <div class="col s12 m12 l3">
-
             </div>
         </div>
     </div>

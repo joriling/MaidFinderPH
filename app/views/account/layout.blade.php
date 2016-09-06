@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Standard Meta -->
-    @section('title')
-        <title>Login - MaidFinder</title>
-    @show
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    @section('css')
-        <link rel="stylesheet" type="text/css" href="{{ asset('public/semantic/assets/css/semantic.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('public/semantic/assets/css/mycss.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('public/semantic/assets/css/wodry.css') }}">
-        <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
-        <link rel="icon" href="{{ asset('semantic/assets/img/icon.png') }}">
-        <script type="text/javascript" src="{{ asset('public/semantic/assets/js/jquery.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('public/semantic/assets/js/wodry.min.js') }}"></script>
-        @show
-                <!-- Site Properties -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/material/css/mycss.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/material/css/materialize.min.css') }}" />
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/semantic/assets/css/fonts.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/material/css/page.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/css/style.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/css/animate.css')}}" />
+    <link rel="stylesheet" href="{{asset('public/css/materialdesignicons.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/material/css/home-style.css')}}" />
+    <link rel="icon" href="{{ asset('public/images/icon2.png') }}">
+    @section('css')
+    @show
+    @section('title')
+        <title>MaidFinderPH</title>
+    @show
 </head>
-<body>
-@section('header')
-    @include('account.header')
-@show
+<body class="grey lighten-5">
+@include('account.header')
 @yield('content')
-@include('account.footer')
+@include('shared.footer')
+
+        <!--  Scripts-->
+<script src="{{ asset('public/material/js/jquery.js') }}"></script>
+<script src="{{ asset('public/material/js/jquery.js') }}"></script>
+<script src="{{ asset('public/material/js/materialize.min.js') }}" ></script>
+<script>
+    $(document).ready(function() {
+        $(".button-collapse").sideNav();
+        $('select').material_select();
+        $('.parallax').parallax();
+        //$('.fixed-section').pushpin({ top: $('.fixed-section').offset().top });
+    });
+</script>
 @section('js')
-    <script src="{{ asset('public/semantic/assets/js/semantic.min.js') }}"></script>
-    <script src="{{ asset('public/semantic/assets/js/myjs.js') }}"></script>
 @show
 </body>
 </html>

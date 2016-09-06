@@ -1,6 +1,3 @@
-
-
-
 @extends('account.layout')
 @section('css')
     @parent

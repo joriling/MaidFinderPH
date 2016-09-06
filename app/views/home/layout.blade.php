@@ -15,7 +15,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/material/css/home-style.css')}}" />
     <link rel="icon" href="{{ asset('public/images/icon2.png') }}">
 @section('css')
-
     @show
     @section('title')
         <title>MaidFinderPH</title>
