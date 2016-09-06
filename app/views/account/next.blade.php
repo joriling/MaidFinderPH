@@ -3,7 +3,7 @@
             <div class="container" style="height: 30em">
                 <div class="row">
                     <div class="col s12 m12 l12" style="margin-top: 6em; margin-bottom: 3em;">
-                        <h3 class="ceneter animated flip">Let us know what you need </h3>
+                        <h3 class="animated flip blue-grey-text">Let us know what you need </h3>
                     </div>
                     <div class="col s6 m6 l6 center">
                         I need a Helper
