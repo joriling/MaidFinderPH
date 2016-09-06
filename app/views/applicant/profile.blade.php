@@ -55,8 +55,16 @@
                                     {{ $app->contactno }}
                                 </div>
                                 <div class=" valign-wrapper">
-                                    <span class=""><i class="tIcon mdi mdi-gender-male-female "></i></span>
 
+                                    <?php
+                                        if( $app->gender  == "Female")
+                                        {
+                                        echo "<i class=\"tIcon mdi mdi-gender-female \"></i>";
+                                     } else
+                                        {
+                                            echo "<i class=\"tIcon mdi mdi-gender-male \"></i>";
+                                        }
+                                    ?>
                                     {{ $app->gender }}
                                 </div>
 
@@ -71,6 +79,7 @@
                                         </div>
                                         <div class="valign-wrapper">
                                             <i class="tIcon mdi mdi-church">Religion:</i>
+
                                             {{ $app->religion }}
                                         </div>
 
