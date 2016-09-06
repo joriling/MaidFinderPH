@@ -1,7 +1,7 @@
         <?php $__env->startSection('content'); ?>
-            <div class="container" style="height: 25em">
+            <div class="container" style="height: 30em">
                 <div class="row">
-                    <div class="col s12 m12 l12" style="margin-top: 6em">
+                    <div class="col s12 m12 l12" style="margin-top: 6em; margin-bottom: 3em;">
                         <h3 class="ceneter animated flip">Let us know what you need </h3>
                     </div>
                     <div class="col s6 m6 l6 center">

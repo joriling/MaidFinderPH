@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af98a064-9778-4bb6-8eea-14f47f76ee53" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/492868ee60e0edfa35414afbdf7083e6" afterPath="$PROJECT_DIR$/app/storage/views/492868ee60e0edfa35414afbdf7083e6" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/885a067c587b2e3fdc07a9fd565f2843" afterPath="$PROJECT_DIR$/app/storage/views/885a067c587b2e3fdc07a9fd565f2843" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/views/a604f3a58acda5ff91e42ea933bb0085" afterPath="$PROJECT_DIR$/app/storage/views/a604f3a58acda5ff91e42ea933bb0085" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/header.blade.php" afterPath="$PROJECT_DIR$/app/views/account/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/layout.blade.php" afterPath="$PROJECT_DIR$/app/views/account/layout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/login.blade.php" afterPath="$PROJECT_DIR$/app/views/account/login.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/next.blade.php" afterPath="$PROJECT_DIR$/app/views/account/next.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/layout.blade.php" afterPath="$PROJECT_DIR$/app/views/home/layout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/register.blade.php" afterPath="$PROJECT_DIR$/app/views/home/register.blade.php" />
     </list>
     <ignored path="dohdtr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,11 +96,11 @@
       <file leaf-file-name="next.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/account/next.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54937166">
-              <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.12208258">
+              <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
               <folding>
                 <element signature="e#90#110#0#HTML" expanded="true" />
-                <element signature="e#195#218#0#HTML" expanded="true" />
+                <element signature="e#195#239#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -969,11 +961,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/account/next.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54937166">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.12208258">
+          <caret line="4" column="92" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
           <folding>
             <element signature="e#90#110#0#HTML" expanded="true" />
-            <element signature="e#195#218#0#HTML" expanded="true" />
+            <element signature="e#195#239#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
