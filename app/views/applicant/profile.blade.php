@@ -7,7 +7,7 @@
                 <div class="card-panel">
                     <div class="row">
                         <div class="col s12 m12 l4">
-                            <form action="{{ asset('/applicant/update/picture') }}" method="post" enctype="multipart/form-data" />
+                            <form action="{{ asset('/applicant/update/picture') }}" method="post" enctype="multipart/form-data" >
                                 <div class="row">
                                     <div class="col s12 m12 l12 valign-wrapper">
                                         <img id="editpicture"  class="center  circle" src="{{ asset('public/uploads/profile/'.(($app['profilepic']) != null ? $app['profilepic'] :'facebook.jpg' )) }}" />
@@ -25,7 +25,6 @@
                                         <input type="submit" class="btn reveal blue" name="upload" value="Upload Photo" />
                                     </div>
                                 </div>
-
                             </form>
                         </div>
                         <div class="col s12 m12 l8">

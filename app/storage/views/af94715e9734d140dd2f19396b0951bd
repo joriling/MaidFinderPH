@@ -1,7 +1,7 @@
 <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content gray-text browser-default" style="margin-top:5px">
 
-    <li class="valign-wrapper"><a class="black-text" href="<?php echo asset('employer/logout'); ?>">Logout <i class="mdi mdi-logout right" style="font-size: 1em"></i> </a></li>
+    <li><a class="black-text" href="<?php echo asset('employer/logout'); ?>">Logout <i class="mdi mdi-logout right" style="font-size: 1em"></i></a></li>
 </ul>
 <!-- Dropdown Structure -->
 <ul id="dropdown2" class="dropdown-content gray-text browser-default">
