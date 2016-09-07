@@ -17,7 +17,7 @@
 
     <?php echo $__env->yieldSection(); ?>
     <?php $__env->startSection('title'); ?>
-        <title>MaidFinder PH</title>
+        <title>MaidFinderPH</title>
     <?php echo $__env->yieldSection(); ?>
 </head>
 <body class="grey lighten-4">

@@ -17,7 +17,7 @@
 
     @show
     @section('title')
-        <title>MaidFinder PH</title>
+        <title>MaidFinderPH</title>
     @show
 </head>
 <body class="grey lighten-4">

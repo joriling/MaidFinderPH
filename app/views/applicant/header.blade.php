@@ -1,13 +1,13 @@
 
 <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content gray-text browser-default">
-    <li><a class="black-text" href="{{ asset('applicant/logout') }}">Logout <i></i> </a></li>
+    <li><a class="black-text" href="{{ asset('applicant/logout') }}">Logout <i class="mdi mdi-logout right" style="font-size: 1em"></i></a></li>
 </ul>
 
 <!-- Dropdown Structure -->
 <ul id="dropdown2" class="dropdown-content black-text browser-default">
     <li><a class="black-text" href="{{ asset('applicant/profile') }}">Profile</a></li>
-    <li><a class="black-text" href="{{ asset('applicant/logout') }}">Logout</a></li>
+    <li><a class="black-text" href="{{ asset('applicant/logout') }}">Logout <i class="mdi mdi-logout right" style="font-size: 1em"></i></a></li>
 </ul>
 <div class="navbar-fixed">
     <nav class="">
@@ -19,7 +19,6 @@
                 <li><a class="white-text" href="{{ asset('applicant/home') }}">Home</a></li>
                 <li><a class="white-text" href="{{ asset('employer/job/ads') }}">Employer ads</a></li>
                 <li><a class="white-text" href="badges.html">Recommendations</a></li>
-                <li><a class="white-text" href="badges.html">Subscription</a></li>
                 <!-- Dropdown Trigger -->
                 <li>
                     <a class="dropdown-button chip light-blue lighten-5" style="color:#5b5b5c;text-transform: capitalize;" data-hover="true" data-beloworigin="true" href="{{ asset('applicant/profile') }}" data-activates="dropdown1">{{ $app['fname'] }}

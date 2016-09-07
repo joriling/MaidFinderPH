@@ -1,6 +1,6 @@
-
 <div class="sideNav fixed-section ">
     <div class="collection " style="border:0">
+        <a class="collection-item " href="<?php echo asset('/applicant/shortlist/'); ?>">Employer List<i class="mdi mdi-briefcase-download small right "></i></a>
         <a class="collection-item " href="<?php echo asset('/applicant/shortlist/'); ?>">Shortlist<i class="mdi mdi-format-list-bulleted small right "></i></a>
         <a class="collection-item " href="<?php echo asset('/employer/job/request'); ?>">Employers Request <i class="mdi mdi-human-greeting small right" ></i></a>
         <a class="collection-item " href="<?php echo asset('/applicant/messagebox'); ?>">Message <i class="mdi mdi-inbox-arrow-down small right"></i> </a>
